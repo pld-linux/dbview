@@ -10,7 +10,7 @@ Group(pl):	Aplikacje/Bazy danych
 Source0:	ftp://metalab.unc.edu/pub/Linux/apps/database/proprietary/%{name}-%{version}.tar.gz
 Patch0:		%{name}-make.patch
 Patch1:		%{name}-fixes.patch
-Icon:		%{name}.xpm
+Icon:		dbview.xpm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
