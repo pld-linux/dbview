@@ -2,7 +2,7 @@ Summary:	dbview - view dBase files
 Summary(pl):	Program do ogl±dania plików dBase
 Name:		dbview
 Version:	1.0.3
-Release:	4
+Release:	5
 License:	GPL
 Group:		Applications/Databases
 Source0:	ftp://metalab.unc.edu/pub/Linux/apps/database/proprietary/%{name}-%{version}.tar.gz
