@@ -6,6 +6,7 @@ Release:	4
 License:	GPL
 Group:		Applications/Databases
 Source0:	ftp://metalab.unc.edu/pub/Linux/apps/database/proprietary/%{name}-%{version}.tar.gz
+# Source0-md5:	75521f1f3eb461e27481a6098b5da777
 Patch0:		%{name}-make.patch
 Patch1:		%{name}-fixes.patch
 Icon:		dbview.xpm
