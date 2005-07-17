@@ -1,0 +1,39 @@
+diff -u3 dbview-1.0.3-orig/db_dump.h dbview-1.0.3/db_dump.h
+--- dbview-1.0.3-orig/db_dump.h	2005-07-15 09:15:14.000000000 +0200
++++ dbview-1.0.3/db_dump.h	2005-07-15 09:44:06.869996544 +0200
+@@ -47,18 +47,20 @@
+ #define DB_FL_OMIT	0x10
+ #define DB_FL_TRIM	0x20
+ 
++#include <sys/types.h>
++
+ typedef struct dbase_head { 
+-    unsigned char	version;		/* 03 for dbIII and 83 for dbIII w/memo file */
+-    unsigned char	l_update[3];		/* yymmdd for last update*/
+-    unsigned long	count;			/* number of records in file*/
+-    unsigned short	header;			/* length of the header
++    u_int8_t	version;		/* 03 for dbIII and 83 for dbIII w/memo file */
++    u_int8_t	l_update[3];		/* yymmdd for last update*/
++    u_int32_t	count;			/* number of records in file*/
++    u_int16_t	header;			/* length of the header
+ 						 * includes the \r at end
+ 						 */
+-    unsigned short	lrecl;			/* length of a record
++    u_int16_t	lrecl;			/* length of a record
+ 						 * includes the delete
+ 						 * byte
+ 						 */
+-    unsigned char   reserv[20];
++    u_int8_t   reserv[20];
+     } DBASE_HEAD;
+ 
+ #define DB_FLD_CHAR  'C'
+@@ -71,7 +73,7 @@
+     char    name[11];                                           /*field name*/
+     char    type;                                               /*field type*/
+     /* A-T uses large data model but drop it for now */
+-    char   *data_ptr;                         /*pointer into buffer*/
++    u_int32_t kludge;
+     unsigned char length;                     /*field length*/
+     char   dec_point;                         /*field decimal point*/
+     char   fill[14];
