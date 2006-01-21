@@ -10,7 +10,6 @@ Source0:	ftp://metalab.unc.edu/pub/Linux/apps/database/proprietary/%{name}-%{ver
 Patch0:		%{name}-make.patch
 Patch1:		%{name}-fixes.patch
 Patch2:		%{name}-64bit.patch
-Icon:		dbview.xpm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
