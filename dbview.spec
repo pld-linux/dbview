@@ -1,5 +1,5 @@
 Summary:	dbview - view dBase files
-Summary(pl):	Program do ogl±dania plików dBase
+Summary(pl.UTF-8):   Program do oglÄ…dania plikÃ³w dBase
 Name:		dbview
 Version:	1.0.3
 Release:	6
@@ -17,9 +17,9 @@ dbview is a little tool that will display dBase III and IV files. You
 can also use it to convert your old .dbf files for further use with
 Unix.
 
-%description -l pl
-dbview jest ma³ym programem wy¶wietlaj±cym zawarto¶æ plików dBase III
-i IV. Mo¿na go wykorzystaæ do konwersji starych plików .dbf do
+%description -l pl.UTF-8
+dbview jest maÅ‚ym programem wyÅ›wietlajÄ…cym zawartoÅ›Ä‡ plikÃ³w dBase III
+i IV. MoÅ¼na go wykorzystaÄ‡ do konwersji starych plikÃ³w .dbf do
 wykorzystania pod Uniksem.
 
 %prep
