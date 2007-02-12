@@ -1,5 +1,5 @@
 Summary:	dbview - view dBase files
-Summary(pl.UTF-8):   Program do oglądania plików dBase
+Summary(pl.UTF-8):	Program do oglądania plików dBase
 Name:		dbview
 Version:	1.0.3
 Release:	6
